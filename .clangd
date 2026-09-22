@@ -1,0 +1,16 @@
+CompileFlags:
+  # Where the debug preset writes compile_commands.json
+  CompilationDatabase: build
+  # clangs default selection doesnt find the compiler I want on my machine. Remove this if this isn't an issue on yours.
+  Add: [--gcc-install-dir=/usr/lib/gcc/x86_64-linux-gnu/13]
+
+Diagnostics:
+  ClangTidy: {}
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+
+Completion:
+  AllScopes: Yes
+
+Hover:
+  ShowAKA: Yes
